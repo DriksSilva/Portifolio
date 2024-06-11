@@ -1,0 +1,29 @@
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+  padding: 0 .62rem 0 1.8rem;
+  list-style: none;
+}
+
+.portfolio li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  transition: .9s;
+}
+
+.github::before {
+  content: "";
+  display: inline-block;
+  background-image: url('/assets/img/icons/github.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.3rem;
+  height: 1.5rem;
+  margin: 0 .5rem;  
+}
+

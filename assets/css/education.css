@@ -1,0 +1,31 @@
+.education li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding: 1rem 2.5rem 1.25rem 0px;
+  list-style: none;
+}
+
+.education li::before {
+  content: "";
+  display: inline-block;
+  background-image: url('https://cdn.portal.estacio.br/logotipo_marca_estacio_branco_f411d5753c_1_13160695d2.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4rem;
+  height: 3rem;
+  margin: 2rem 1rem 1.5rem 0;
+  padding: 0 2rem;
+}
+
+@media only screen and (min-width:768px) {
+  .education li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 1rem 2.5rem 0 0px;
+    list-style: none;
+  }
+}

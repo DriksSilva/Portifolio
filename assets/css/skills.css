@@ -1,0 +1,118 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.skills h3{
+ text-decoration: underline;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.hard-skills{
+  margin-bottom: 1.5rem;
+}
+
+.hard-skills ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 1rem 0;
+  list-style: none;
+}
+
+.hard-skills img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: .5rem;
+  padding: .5rem;
+  padding: auto;
+  width: 6rem;
+  height: 6rem;
+}
+
+.soft-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.soft-skills ul{
+  padding: 0;
+}
+
+.soft-skills ul li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+
+.soft-skills li::before {
+    content: "";
+    display: inline-block;
+    background-image: url('/assets/img/icons/chech.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1rem;
+    height: 1rem;
+    margin: .3rem .5rem .2rem .5rem;
+}
+
+
+@media only screen and (min-width:768px) {
+  .hard-skills {
+    margin-bottom: 2rem; 
+  }
+  
+  .hard-skills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;  
+    list-style: none;
+    padding-top: 2rem;
+  }
+  
+  .hard-skills img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    width: 7rem;
+    height: 7rem;
+    transition: .5s;
+  }
+
+  .hard-skills img:hover {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  .soft-skills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: .5rem;
+    padding: 1rem 4rem;
+    list-style: none;
+  }
+}

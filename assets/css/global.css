@@ -1,0 +1,37 @@
+/*Mobile*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu Sans", 'Font Awesome 5 Free', sans-serif;
+  color: #FFFF;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #FBC0D4, #6400a7, #230067, #080018, #000, #080018, #230067, #6400a7, #FBC0D4);
+  background-attachment: fixed;
+}
+
+main {
+  height: 100vh auto;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1.5px solid #FBC0D4;
+  border-radius: 1.4rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*Desktop*/
+
+@media only screen and (min-width:1024px) {
+  .main {
+    max-width: 1024px;
+    margin: 1rem auto;
+  }
+}
