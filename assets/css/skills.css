@@ -11,7 +11,7 @@
 }
 
 .hard-skills{
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .hard-skills ul {
@@ -73,46 +73,46 @@
 
 
 @media only screen and (min-width:768px) {
-  .hard-skills {
-    margin-bottom: 2rem; 
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
   }
-  
+
+  .skills h3 {
+    margin-left: 3rem;
+  }
+
+  .hard-skills {
+    width: 90%;
+  }
+
   .hard-skills ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;  
-    list-style: none;
-    padding-top: 2rem;
+    margin-left: 3rem;
   }
-  
+
   .hard-skills img {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 1rem;
-    padding: 0 1rem;
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
     transition: .5s;
   }
 
   .hard-skills img:hover {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+
+
+  .soft-skills {
+    width: 90%; 
   }
 
   .soft-skills ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin: .5rem;
-    padding: 1rem 4rem;
-    list-style: none;
+    margin-left: 3rem;
   }
+
 }
